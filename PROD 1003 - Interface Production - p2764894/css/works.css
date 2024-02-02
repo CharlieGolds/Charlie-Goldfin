@@ -129,24 +129,7 @@ header .nav li:last-child{
     transform: translateY(0);
     animation: float 6s ease-in-out infinite;
 }
-@keyframes float {
-	0% {
-		transform: translateY(0px);
-	}
-	50% {
-		transform: translateY(-20px);
-	}
-	100% {
-		transform: translateY(0px);
-	}
-}
-/* Works layout, media adjustment for mobile screen */
-@media (max-width: 1500px){
-    .box{min-height: 600px;
-        padding-bottom: 3px;
-        padding-top: 50px}
-    .box h1{font-size: 35px;}
-}
+
 
 
 /* Works gallery, project cards with transition
