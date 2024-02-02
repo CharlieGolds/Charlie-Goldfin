@@ -1,0 +1,266 @@
+/* General css elements including custom font face */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Brendon Grotesque';
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+@font-face {
+    font-family:'Brendon Grotesque';
+    src: url(/fonts/HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf) 
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+ul {
+    list-style:none;
+}
+/* Css for all sections */
+section {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:20px 20px;
+}
+
+
+/*  Header, website title and navigation bar */
+a{
+    text-decoration:none;
+    color: inherit;
+}
+@media (max-width:100px){
+    section{padding: 125px 30px;}
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 30px 70px;
+}
+header a{
+    text-transform: capitalize;
+}
+header h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .nav{
+    display: flex;
+    font-weight: 700;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .nav li{
+    margin: 0 15px;
+}
+header .nav li:first-child{
+    margin-left: 0;
+}
+header .nav li:last-child{
+    margin-right: 0;
+}
+/* Header, social media bar */
+.media-bar2 {
+    margin-top: 10px;
+    }
+.media-bar2 a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    }
+.media-bar2 img {
+    width: 100%; 
+    height: 24px; 
+}
+/* Header, media adjustments for mobile screen */
+@media (max-width:700px){
+    header{flex-direction: column;}
+    header h2{margin-bottom: 8px;}
+    header .nav li{margin: 0 6px;}
+    
+}
+
+
+/* About content, layout for the section */
+.box{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ffff;
+    background-color: #161616;
+    text-align: center;
+    width: auto;
+    flex-direction:column;
+}
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about {
+    width: 100%;
+    padding: 78px 10px;
+}
+/* About content, style for texts and image */
+.about img {
+    height: auto;
+    width: 500px;
+    top: 60px;
+    border-radius:50%;
+    margin-right:40px;
+}
+.about-text {
+    width: 550px;
+    text-align: left;
+}
+.about-text h1 {
+    color: white;
+    font-size: 90px;
+    text-transform: capitalize;
+}
+.about-text h5 {
+    color: rgb(228, 218, 123);
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.about-text p{
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 20px;
+    margin-bottom: 45px;
+    font-family: 'Times New Roman', Times, serif;
+} 
+span{
+    color: #36cc45;
+    margin-left:20px;
+}
+/* About content, animation for moving about text */
+.avatar {
+    box-sizing: border-box;
+    transform: translateY(0);
+    animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+/* About content, style for button */
+button{
+    background: #218d2c;;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #2aa836;
+    cursor: pointer;
+}
+/* About content, media adjustments for mobile screen */
+@media (max-width: 600px) {
+    .box{
+        min-height: 100vh;}
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding:10px;}
+    .about {
+        margin-bottom:10px;}
+    .about img{
+        width: 270px;
+        margin-top:30px;
+        margin-right: 0px;
+        align-items:center;}
+    .about-text {
+        text-align: center;}
+    .about-text h1{
+        font-size:60px;
+        margin-top: 15px;}
+    .about-text h5{
+        font-size:20px;}
+    .about-text p{
+        font-size:15px}
+    .main > .about-text {
+        width:fit-content;}
+    button{
+        align-items: center;}
+}
+
+
+/* Footer */
+footer {
+    background-color: #161616;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    }
+/* Footer, social media bar */
+.media-bar {
+    margin-top: 10px;
+    }
+.media-bar a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    }
+.media-bar img {
+    width: 30px; 
+    height: 30px; 
+}
+/* Footer, copyright */
+.copyright {
+    margin-top: 7px;
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+
+
+/* Scrollbar modifications, color and width change */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #0000009a;
+}   
+::-webkit-scrollbar-thumb{
+    background: white;
+}

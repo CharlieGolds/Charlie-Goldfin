@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Goldfin</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+  <header>
+    <!--  This is the title of my website and the navigation bar  -->
+    <h2><a href="index.html">Charlie Goldfin</a></h2>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <!--  This is the working social media bars, containing only four platforms  -->
+    <div class="media-bar2">
+      <a href="https://www.youtube.com" target="_blank"><img src="img/youtube-app-white-icon.png"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="img/output-onlinepngtools.png"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="img/new-Instagram-logo-white-glyph-1200x1199.png"></a>
+      <a href="https://www.gmail.com" target="_blank"><img src="img/image (19).png"></a>
+    </div>
+  </header>    
+
+  <!--  This is the first section, which contains an introduction to the website. The id in the section
+  acts as a url to the buttons, in which the button on the second section, when clicked will go back up to this
+  first section.  -->
+  <section class="box" id="secone">
+    <!--  Background video, reason I have this is because it gives a strong first impression to the audience that
+    I am passionate about cameras and my work, and it looks quite professional while making it less plain.  -->
+    <video autoplay muted loop src="vid/pexels_videos_2795400 (2160p).mp4" type="vid/mp4"></video>
+    <!--  Text. the avatar class is used as a floating animation while the span is used to make the color of that
+    part of the text different. I added the span to make the text stand out.  -->
+    <div class="avatar">
+      <h1>Hello, <span>I'm Charlie</span></h1>
+    </div>  
+    <h3>Photographer and filmmaker based in Leicester</h3>
+    <!-- The button that goes down to the second section --> 
+    <a href="#sectwo" class="boxBtn">V</a>
+  </section>
+
+  <!--  This is the second section, containing an image slider using css and javascript. Again the id in this section
+  acts as a url to the buttons, in which the first section button, when clicked will go to this second section.  -->  
+  <section class="box2" id="sectwo">
+    <!--  This div contains the image sliders, which is linked to the javascript and contained all the iamges.  --> 
+    <div class="imgtrackmove" id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+      <img class="image" src="/img/IMG_5401-2.jpg" draggable="false"/>
+      <img class="image" src="/img/IMG_5575-2.jpg" draggable="false"/>
+      <img class="image" src="/img/IMG_5601-2.jpg" draggable="false"/>
+      <img class="image" src="/img/Charlie_S 1000_ISO 400_F 4.5.jpg" draggable="false"/>
+      <img class="image" src="/img/Charlie_A_S90_ISO100_F2.8.jpg" draggable="false"/>
+      <img class="image" src="/img/IMG_4129 - Copy.jpg" draggable="false"/>
+    </div>
+    <h1><span>Photo samples</span> ( drag left and right )</h1>
+    <!-- The button that goes up to the first section -->
+    <a href="#secone" class="boxBtn">Λ</a>
+  </section>
+
+  <!-- Footer, contains media bar as well as a copyright or trademark below it -->
+  <footer>
+    <div class="media-bar">
+      <a href="https://www.youtube.com" target="_blank"><img src="img/Untitled design.png"></a>
+      <a href="https://www.instagram.com" target="_blank"><img src="img/Untitled design (1).png"></a>
+      <a href="https://www.twitter.com" target="_blank"><img src="img/Untitled design (3).png"></a>
+      <a href="https://www.gmail.com" target="_blank"><img src="img/Untitled design (2).png"></a>
+    </div>
+    <div class="copyright">
+      &copy;2024 Charlie Goldfin
+    </div>
+  </footer>
+
+  <!-- Javascript for the slider -->  
+  <script src="js/main.js"></script>
+</body>
+
+</html>
