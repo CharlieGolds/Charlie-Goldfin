@@ -148,9 +148,9 @@ header .nav li:last-child{
     .box h1{font-size: 35px;}
 }
 
+
 /* Works gallery, project cards with transition
-The style for card images and text is located at the head of works.html
-This is because having the url in the css, makes the picture not appear in github */
+the background-image url is not working in github somehow */
 .card{
     width: 280px;
     height: 380px;
@@ -170,23 +170,22 @@ This is because having the url in the css, makes the picture not appear in githu
     background-color: rgba(0, 0, 0, 0.5)
 }
 .card1{
-      background-image:url(../../img\IMG_5575-2.jpg)
-}
+    background-image: url(../../img/IMG_5575-2.jpg)
+} 
 .card2{
-      background-image:url(https://charliegolds.github.io/Charlie-Goldfin/IMG_4150.jpg)
+    background-image: url(../../img/IMG_4150.jpg)
 }
 .card3{
-      background-image:url(../../img/Screenshot\ 2024-01-31\ 164835.png)
+    background-image: url(../../img/Screenshot\ 2024-01-31\ 164835.png)
 }
 .card4{
-      background-image:url(../../img/IMG_3585.jpg)
-      }
-.card h5{
-      color: #fff;
-      font-size: 20px;
-      text-shadow: 0 0 10px #010101;
+    background-image: url(../../img/IMG_3585.jpg)
 }
-
+    .card h5{
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0 0 10px #010101;
+}
 /* Works gallery, screen adjustment for mobile */
 @media screen and (max-width:570px){
     .card {width:150px;
